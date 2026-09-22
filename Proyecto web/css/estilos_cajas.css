@@ -1,0 +1,39 @@
+body{
+    background-color: brown;
+    margin:0;
+    padding:0;
+}
+/* div{
+    background-color: rgb(95, 30, 226);
+    color:#fff;
+    width:100px;
+    height:100px;
+    font-size: 10px;
+    float:left;
+    /*margin:20px 15px;
+    padding:30px;
+    border: 10px solid;
+    display:inline-block*/
+    
+    
+/*} */
+
+/* .caja-padre{
+    background: #070707;
+    width:500px;
+    height:500px;
+    position:relative;
+} */
+
+.caja3{
+    float:left;
+    top:100px;
+    bottom: 0px;
+    right: 0px;
+    left:300px;
+    
+}
+ul li{
+    float:left;
+    margin-right: 20px;
+}

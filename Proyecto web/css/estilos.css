@@ -1,0 +1,115 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+.navbar{
+    background-color: green;
+    display:flex;
+}
+
+.logo img{
+    width: 100px;
+    padding-top: 25px;
+    padding-left: 5px;
+    border-radius: 20px;
+}
+
+.nav-menu{
+    display:flex;
+    padding:2px;
+}
+
+.nav-menu li{
+    list-style: none;
+    padding:30px;
+    font-size: 20px;
+    
+}
+
+.nav-menu li a{
+    color:#fff;
+    background-color: cadetblue;
+    padding:15px 25px;
+    border-style: solid;
+    border-radius:8px;
+    border-color:black;
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    
+}
+
+.nav-menu a:hover{
+    color: #4013b3;
+}
+.nav-ingreso button {
+    background-color: rgb(87, 47, 187);
+    display:inline-flex;
+    justify-content:center;
+    align-items: center;
+    padding:10px 25px;
+    margin:35px 25px;
+    cursor: pointer;
+    gap: 10px; /* Separa icono del texto*/
+}
+
+.carrusel img{
+    
+    width: 300px;
+    height: 400px;
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+}
+
+.carrusel-ventana{
+    display:flex;
+    width: 1185px; /* Ancho total de las 3 imágenes juntas (300px * 3) */
+    height: 400px; /* Alto de las imágenes */
+    /*overflow: hidden; /* Oculta lo que sale de la ventana */
+    border: 2px solid #ccc; /* Opcional: borde para ver la ventana */
+    margin: 2px;
+    gap: 20px;
+    /*overflow-x: auto; /* Coloca barra laterales*/
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+.carrusel {
+  display: flex; /* Alinea las imágenes en línea */
+  /*width: calc(300px * 3); /* Ancho total de 6 imágenes (3 originales + 3 duplicadas) */
+  
+  /* APLICAR LA ANIMACIÓN */
+  /*animation: desplazarIzquierda 10s linear infinite;*/
+}
+
+.carrusel-ventana article p{
+    text-align: justify;
+    display:flex;
+    
+}
+
+.carrusel-ventana article{
+    width: 100%;             /* Se adapta al tamaño del contenedor padre */
+    max-width: 900px;        /* Un ancho máximo sugerido para el artículo */
+    padding: 20px;           /* Espacio interno para que el texto no toque los bordes */
+    box-sizing: border-box;
+    background-color: aqua;  /* Asegura que el padding no altere el ancho total */
+}
+
+article p {
+    width: 100%;             /* El párrafo ocupa exactamente el 100% del article */
+    margin: 0;
+    
+    /* Propiedades opcionales de formato tipográfico */
+    font-size: 1rem;         /* Tamaños típicos: 1rem (16px) o 1.1rem */
+    line-height: 1.5;        /* Espaciado entre líneas para mejor lectura */
+    text-align: justify;     /* Alinea el texto a ambos bordes (opcional) */
+}
+
+/*@keyframes desplazarIzquierda {
+  0% {
+    transform: translateX(0); /* Posición inicial */
+  /*}
+  100% {
+    /* Se desplaza hacia la izquierda el ancho exacto de las 3 imágenes originales */
+    /*transform: translateX(calc(-300px * 3)); 
+  /*}
+}
